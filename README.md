@@ -10,6 +10,7 @@
 Admineg - is a console application that helps to comfortably and easily manage the computer system, and also contains useful utilities.
 </p>
 ## 👀 Preview
+
 ![image](Images/image.png)
 
 ## ✨ Features

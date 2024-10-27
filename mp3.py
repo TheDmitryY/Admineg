@@ -1,7 +1,5 @@
 import moviepy
 import moviepy.editor
-import colorama
-from colorama import Fore, Style, init
 
 def Conventer():
     file_pach = input(Fore.LIGHTCYAN_EX + "Enter File Path ! ")

@@ -1,4 +1,5 @@
-
+from mp3 import  Conventer
+from audiobook import Book_Menu
 def title():
     print(" █████╗ ██████╗ ███╗   ███╗██╗███╗   ██╗███████╗ ██████╗")
     print("██╔══██╗██╔══██╗████╗ ████║██║████╗  ██║██╔════╝██╔════╝")
@@ -37,6 +38,11 @@ def Convertors_Menu():
         print("                 ╚════════════════════╝                  ")
         activity_choise = input("")
         if activity_choise == "1":
+            Conventer()
+        elif activity_choise == "2":
+            Book_Menu()
+        elif activity_choise == "3":
+            menu()
 
 
 def Generator_Menu():

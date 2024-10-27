@@ -1,5 +1,3 @@
 pyttsx3
-os
 moviepy
-moviepy.editor
 qrcode

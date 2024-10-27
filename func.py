@@ -1,5 +1,5 @@
 from password import  Password_Menu; from qrcodegen import Code_Menu; from audiobook import Book_Menu; from audiobook import Book_Menu; from mp3 import  Conventer; import os, webbrowser
-from pystyle import Colors, Colorate, System
+from pystyle import Colors, Colorate, System; from ip_generator import Gen_Ip; from email_generator import Gens_Email;
 def title():
     print(Colorate.Horizontal(Colors.cyan_to_blue, " █████╗ ██████╗ ███╗   ███╗██╗███╗   ██╗███████╗ ██████╗", 1))
     print(Colorate.Horizontal(Colors.cyan_to_blue, "██╔══██╗██╔══██╗████╗ ████║██║████╗  ██║██╔════╝██╔════╝", 1))
@@ -63,6 +63,10 @@ def Generator_Menu():
         Password_Menu()
     elif Generator_Choise == "2":
         Code_Menu()
+    elif Generator_Choise == "3":
+        Gens_Email()
+    elif Generator_Choise == "4":
+        Gen_Ip()
     else:
         menu()
 

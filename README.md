@@ -1,6 +1,7 @@
 <h1 align="center">Admineg</h1>
 
 <h4 align="center">
+  
   <a href="https://t.me/horekisun">Telegram</a>
   |
   <a href="https://github.com/TheDmitryY/Admineg#-installation"">Installation</a>
@@ -9,6 +10,7 @@
 <p align="center">
 Admineg - is a console application that helps to comfortably and easily manage the computer system, and also contains useful utilities.
 </p>
+
 ## 👀 Preview
 
 ![image](Images/image.png)

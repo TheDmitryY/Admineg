@@ -2,7 +2,7 @@ import moviepy
 import moviepy.editor
 
 def Conventer():
-    file_pach = input(Fore.LIGHTCYAN_EX + "Enter File Path ! ")
+    file_pach = input("Enter File Path : ")
     if file_pach:
         print(f"You choose file : {file_pach} ")
     else:

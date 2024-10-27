@@ -1,7 +1,6 @@
 <h1 align="center">Admineg</h1>
 
 <h4 align="center">
-  
   <a href="https://t.me/horekisun">Telegram</a>
   |
   <a href="https://github.com/TheDmitryY/Admineg#-installation"">Installation</a>

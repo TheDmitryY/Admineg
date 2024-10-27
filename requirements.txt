@@ -1,5 +1,4 @@
 pyttsx3
-colorama
 os
 moviepy
 moviepy.editor

@@ -1,7 +1,4 @@
-import os
-from mp3 import  Conventer
-from audiobook import Book_Menu
-import webbrowser
+from password import  Password_Menu; from qrcodegen import Code_Menu; from audiobook import Book_Menu; from audiobook import Book_Menu; from mp3 import  Conventer; import os, webbrowser
 def title():
     print(" █████╗ ██████╗ ███╗   ███╗██╗███╗   ██╗███████╗ ██████╗")
     print("██╔══██╗██╔══██╗████╗ ████║██║████╗  ██║██╔════╝██╔════╝")
@@ -56,6 +53,14 @@ def Generator_Menu():
     print("                 ║   4. IP            ║                  ")
     print("                 ║   5. Back          ║                  ")
     print("                 ╚════════════════════╝                  ")
+    Generator_Choise = input("")
+    if Generator_Choise == "1":
+        Password_Menu()
+    elif Generator_Choise == "2":
+        Code_Menu()
+    else:
+        menu()
+
 
 
 def FastOpen_Menu():
@@ -82,6 +87,9 @@ def Network_Menu():
     print("                 ║   3. Active Ports  ║                  ")
     print("                 ║   4. Back          ║                  ")
     print("                 ╚════════════════════╝                  ")
+    Network_Choise = input("")
+    if Network_Choise == "4":
+        menu()
 
 
 def About_Menu():
@@ -92,6 +100,9 @@ def About_Menu():
     print("                 ║   Version : 1.0.0        ║                  ")
     print("                 ║   1. Back                ║                  ")
     print("                 ╚══════════════════════════╝                  ")
+    About_Choise = input("")
+    if About_Choise == "1":
+        menu()
 
 def FastOpen_App():
     Putty = "Apps\putty.exe"
@@ -108,7 +119,7 @@ def FastOpen_App():
     if FastOpen_Choise == "2":
         os.startfile(AnyDesk)
     if FastOpen_Choise == "3":
-        menu()
+        FastOpen_Menu()
 
 def FastOpen_Sites():
     title()
@@ -133,4 +144,4 @@ def FastOpen_Sites():
         Router = "http://192.168.0.1"
         webbrowser.open(Router)
     elif FastSite_Choise == "5":
-        menu()
+        FastOpen_Menu()

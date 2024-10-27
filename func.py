@@ -17,6 +17,7 @@ def menu():
     print(Colorate.Horizontal(Colors.cyan_to_blue, "                 ║   4. Network       ║                  ", 1))
     print(Colorate.Horizontal(Colors.cyan_to_blue, "                 ║   5. About         ║                  ", 3))
     print(Colorate.Horizontal(Colors.cyan_to_blue, "                 ╚════════════════════╝                  ", 1))
+    Printes()
     option = input("")
     if option == "1":
         Convertors_Menu()
@@ -32,12 +33,14 @@ def menu():
         menu()
 
 def Convertors_Menu():
+        System.Command("cls")
         title()
         print(Colorate.Horizontal(Colors.cyan_to_blue,"                 ╔════════════════════╗                  ", 1))
         print(Colorate.Horizontal(Colors.cyan_to_blue,"                 ║   1. MP4           ║                  ", 1))
         print(Colorate.Horizontal(Colors.cyan_to_blue,"                 ║   2. Audiobook     ║                  ", 1))
         print(Colorate.Horizontal(Colors.cyan_to_blue,"                 ║   3. Back          ║                  ", 1))
         print(Colorate.Horizontal(Colors.cyan_to_blue,"                 ╚════════════════════╝                  ", 1))
+        Printes()
         activity_choise = input("")
         if activity_choise == "1":
             Conventer()
@@ -50,6 +53,7 @@ def Convertors_Menu():
 
 
 def Generator_Menu():
+    System.Command("cls")
     title()
     print(Colorate.Horizontal(Colors.cyan_to_blue,"                 ╔════════════════════╗                  ", 1))
     print(Colorate.Horizontal(Colors.cyan_to_blue,"                 ║   1. Password      ║                  ", 1))
@@ -58,6 +62,7 @@ def Generator_Menu():
     print(Colorate.Horizontal(Colors.cyan_to_blue,"                 ║   4. IP            ║                  ", 1))
     print(Colorate.Horizontal(Colors.cyan_to_blue,"                 ║   5. Back          ║                  ", 1))
     print(Colorate.Horizontal(Colors.cyan_to_blue,"                 ╚════════════════════╝                  ", 1))
+    Printes()
     Generator_Choise = input("")
     if Generator_Choise == "1":
         Password_Menu()
@@ -73,12 +78,14 @@ def Generator_Menu():
 
 
 def FastOpen_Menu():
+    System.Command("cls")
     title()
     print(Colorate.Horizontal(Colors.cyan_to_blue,"                 ╔════════════════════╗                  ", 1))
     print(Colorate.Horizontal(Colors.cyan_to_blue,"                 ║   1. Apps          ║                  ", 1))
     print(Colorate.Horizontal(Colors.cyan_to_blue,"                 ║   2. Sites         ║                  ", 1))
     print(Colorate.Horizontal(Colors.cyan_to_blue,"                 ║   3. Back          ║                  ", 1))
     print(Colorate.Horizontal(Colors.cyan_to_blue,"                 ╚════════════════════╝                  ", 1))
+    Printes()
     Fast_choise = input("")
     if Fast_choise == "1":
         FastOpen_App()
@@ -91,12 +98,14 @@ def FastOpen_Menu():
 
 
 def Network_Menu():
+    System.Command("cls")
     title()
     print(Colorate.Horizontal(Colors.cyan_to_blue,"                 ╔════════════════════╗                  ", 1))
     print(Colorate.Horizontal(Colors.cyan_to_blue,"                 ║   1. Check IP      ║                  ", 1))
     print(Colorate.Horizontal(Colors.cyan_to_blue,"                 ║   2. Active Ports  ║                  ", 1))
     print(Colorate.Horizontal(Colors.cyan_to_blue,"                 ║   3. Back          ║                  ", 1))
     print(Colorate.Horizontal(Colors.cyan_to_blue,"                 ╚════════════════════╝                  ", 1))
+    Printes()
     Network_Choise = input("")
     if Network_Choise == "1":
         Check_IP()
@@ -109,6 +118,7 @@ def Network_Menu():
 
 
 def About_Menu():
+    System.Command("cls")
     title()
     print(Colorate.Horizontal(Colors.cyan_to_blue,"                 ╔══════════════════════════╗                  ", 1))
     print(Colorate.Horizontal(Colors.cyan_to_blue,"                 ║   GitHub : TheDmitryY    ║                  ", 1))
@@ -116,6 +126,7 @@ def About_Menu():
     print(Colorate.Horizontal(Colors.cyan_to_blue,"                 ║   Version : 1.0.0        ║                  ", 1))
     print(Colorate.Horizontal(Colors.cyan_to_blue,"                 ║   1. Back                ║                  ", 1))
     print(Colorate.Horizontal(Colors.cyan_to_blue,"                 ╚══════════════════════════╝                  ", 1))
+    Printes()
     About_Choise = input("")
     if About_Choise == "1":
         menu()
@@ -123,6 +134,7 @@ def About_Menu():
         menu()
 
 def FastOpen_App():
+    System.Command("cls")
     Putty = "Apps\putty.exe"
     AnyDesk = "Apps\AnyDesk.exe"
     title()
@@ -131,6 +143,7 @@ def FastOpen_App():
     print(Colorate.Horizontal(Colors.cyan_to_blue,"                 ║   2. Anydesk             ║                  ", 1))
     print(Colorate.Horizontal(Colors.cyan_to_blue,"                 ║   3. Back                ║                  ", 1))
     print(Colorate.Horizontal(Colors.cyan_to_blue,"                 ╚══════════════════════════╝                  ", 1))
+    Printes()
     FastOpen_Choise = input("")
     if FastOpen_Choise == "1":
         os.startfile(Putty)
@@ -142,6 +155,7 @@ def FastOpen_App():
         menu()
 
 def FastOpen_Sites():
+    System.Command("cls")
     title()
     print(Colorate.Horizontal(Colors.cyan_to_blue,"                 ╔══════════════════════════╗                  ", 1))
     print(Colorate.Horizontal(Colors.cyan_to_blue,"                 ║   1. Virus Total         ║                  ", 1))
@@ -150,6 +164,7 @@ def FastOpen_Sites():
     print(Colorate.Horizontal(Colors.cyan_to_blue,"                 ║   4. Router Panel        ║                  ", 1))
     print(Colorate.Horizontal(Colors.cyan_to_blue,"                 ║   5. Back                ║                  ", 1))
     print(Colorate.Horizontal(Colors.cyan_to_blue,"                 ╚══════════════════════════╝                  ", 1))
+    Printes()
     FastSite_Choise = input("")
     if FastSite_Choise == "1":
         VirusTotal = 'https://www.virustotal.com'
@@ -169,6 +184,12 @@ def FastOpen_Sites():
         menu()
 
 def Check_IP():
+    System.Command("cls")
     System.Command("ipconfig")
 def Active_PortsNet():
+    System.Command("cls")
     System.Command("netstat")
+
+def Printes():
+    print(Colorate.Horizontal(Colors.cyan_to_blue, "╔═══admins@username", 1))
+    print(Colorate.Horizontal(Colors.cyan_to_blue, "╚═# ", 1))

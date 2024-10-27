@@ -25,4 +25,4 @@ git clone https://github.com/TheDmitryY/Admineg/
 pip install -r requirements.txt
 cd Admineg
 python3 main.py
-```https://github.com/Zproger/GenesisNvim#-installation"
+```

@@ -1,5 +1,5 @@
 from password import  Password_Menu; from qrcodegen import Code_Menu; from audiobook import Book_Menu; from audiobook import Book_Menu; from mp3 import  Conventer; import os, webbrowser
-from pystyle import Colors, Colorate
+from pystyle import Colors, Colorate, System
 def title():
     print(Colorate.Horizontal(Colors.cyan_to_blue, " █████╗ ██████╗ ███╗   ███╗██╗███╗   ██╗███████╗ ██████╗", 1))
     print(Colorate.Horizontal(Colors.cyan_to_blue, "██╔══██╗██╔══██╗████╗ ████║██║████╗  ██║██╔════╝██╔════╝", 1))
@@ -28,6 +28,8 @@ def menu():
         Network_Menu()
     elif option == "5":
         About_Menu()
+    else:
+        menu()
 
 def Convertors_Menu():
         title()
@@ -42,6 +44,8 @@ def Convertors_Menu():
         elif activity_choise == "2":
             Book_Menu()
         elif activity_choise == "3":
+            menu()
+        else:
             menu()
 
 
@@ -78,18 +82,25 @@ def FastOpen_Menu():
         FastOpen_Sites()
     elif Fast_choise == "3":
         menu()
+    else:
+        menu()
 
 
 def Network_Menu():
     title()
     print(Colorate.Horizontal(Colors.cyan_to_blue,"                 ╔════════════════════╗                  ", 1))
     print(Colorate.Horizontal(Colors.cyan_to_blue,"                 ║   1. Check IP      ║                  ", 1))
-    print(Colorate.Horizontal(Colors.cyan_to_blue,"                 ║   2. IP Scanner    ║                  ", 1))
-    print(Colorate.Horizontal(Colors.cyan_to_blue,"                 ║   3. Active Ports  ║                  ", 1))
-    print(Colorate.Horizontal(Colors.cyan_to_blue,"                 ║   4. Back          ║                  ", 1))
+    print(Colorate.Horizontal(Colors.cyan_to_blue,"                 ║   2. Active Ports  ║                  ", 1))
+    print(Colorate.Horizontal(Colors.cyan_to_blue,"                 ║   3. Back          ║                  ", 1))
     print(Colorate.Horizontal(Colors.cyan_to_blue,"                 ╚════════════════════╝                  ", 1))
     Network_Choise = input("")
-    if Network_Choise == "4":
+    if Network_Choise == "1":
+        Check_IP()
+    elif Network_Choise == "2":
+        Active_PortsNet()
+    elif Network_Choise == "3":
+        menu()
+    else:
         menu()
 
 
@@ -103,6 +114,8 @@ def About_Menu():
     print(Colorate.Horizontal(Colors.cyan_to_blue,"                 ╚══════════════════════════╝                  ", 1))
     About_Choise = input("")
     if About_Choise == "1":
+        menu()
+    else:
         menu()
 
 def FastOpen_App():
@@ -121,6 +134,8 @@ def FastOpen_App():
         os.startfile(AnyDesk)
     if FastOpen_Choise == "3":
         FastOpen_Menu()
+    else:
+        menu()
 
 def FastOpen_Sites():
     title()
@@ -146,3 +161,10 @@ def FastOpen_Sites():
         webbrowser.open(Router)
     elif FastSite_Choise == "5":
         FastOpen_Menu()
+    else:
+        menu()
+
+def Check_IP():
+    System.Command("ipconfig")
+def Active_PortsNet():
+    System.Command("netstat")

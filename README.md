@@ -1,11 +1,10 @@
 <h1 align="center">Admineg</h1>
-<img src="https://img.shields.io/badge/version-1.0.2-blue">
 <h4 align="center">
   <a href="https://t.me/horekisun">Telegram</a>
   |
   <a href="https://github.com/TheDmitryY/Admineg#-installation"">Installation</a>
 </h4>
-
+<img src="https://img.shields.io/badge/version-1.0.2-blue">
 <p align="center">
 Admineg - is a console application that helps to comfortably and easily manage the computer system, and also contains useful utilities.
 </p>

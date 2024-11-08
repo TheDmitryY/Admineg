@@ -9,6 +9,7 @@
 <img src="https://img.shields.io/badge/version-1.0.2-blue">
 <img src="https://img.shields.io/github/commit-activity/m/badges/shields">
 <img src="https://img.shields.io/github/discussions/badges/shields">
+  
 Admineg - is a console application that helps to comfortably and easily manage the computer system, and also contains useful utilities.
 </p>
 

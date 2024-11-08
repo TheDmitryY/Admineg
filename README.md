@@ -1,5 +1,5 @@
 <h1 align="center">Admineg</h1>
-
+<img src="https://img.shields.io/badge/version-1.0.2-blue">
 <h4 align="center">
   <a href="https://t.me/horekisun">Telegram</a>
   |
@@ -22,7 +22,14 @@ Admineg - is a console application that helps to comfortably and easily manage t
  ## 🌟 Installation
   ```sh
 git clone https://github.com/TheDmitryY/Admineg/
-pip install -r requirements.txt
 cd Admineg
+chmod +x install.sh
+./install.sh
+```
+or
+  ```sh
+git clone https://github.com/TheDmitryY/Admineg/
+cd Admineg
+pip install -r requirements.txt
 python3 main.py
 ```
